@@ -51,7 +51,7 @@ export default defineComponent({
         const router = useRouter();
         const form = reactive({
             acc: '0113',
-            pass: '123'
+            pass: '0000'
         })
         onMounted(() => {
             const salt = bcrypt.genSaltSync(10);

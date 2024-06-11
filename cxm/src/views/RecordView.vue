@@ -17,7 +17,8 @@
                 </el-table-column>
                 <el-table-column align="right" width="280">
                     <template #header>
-                        <el-button class="RecBtn" style="background-color: #6D98BA;" @click="handleAdd()">新增紀錄</el-button>
+                        <el-button class="RecBtn" style="background-color: #6D98BA;"
+                            @click="handleAdd()">新增紀錄</el-button>
                         <el-button class="RecBtn" style="background-color: #8a8a8a;"
                             @click="handleKm(nowTab)">新增里程</el-button>
                     </template>
@@ -93,7 +94,7 @@ export default defineComponent({
 
         const date = new Date();
 
-        let day = date.getDate() + 1 < 10 ? '0' + (date.getDate() + 1) : date.getDate() + 1;;
+        let day = date.getDate() + 1 < 10 ? '0' + (date.getDate() + 1) : date.getDate() + 1;
         let month = date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1;
         let year = date.getFullYear();
         let currentDate = year + "-" + month + "-" + day;
